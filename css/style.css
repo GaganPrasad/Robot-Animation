@@ -1,0 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.bodyText{
+  /*background-color: white;*/
+  position: relative;
+  height: 90vh;
+}
+
+.bodyText h1{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5%;
+  position: absolute;
+  font-size: 20vh;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  transition: ease-in-out 500ms;
+}
+.bodyText h1:hover{
+  background-color: black;
+  color: white;
+}
+.bodyText h1::after{
+  content: '' ;
+  background: black;
+  display: block;
+  width: 100%;
+  height: 2px;
+  transition: 500ms;
+}
+.bodyText h1:hover::after{
+  background-color: white;
+  height: 180px;
+}
+.lorem{
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
